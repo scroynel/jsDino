@@ -1,0 +1,540 @@
+*, html, body{margin: 0; padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;}
+.contMenu{
+    height: 700px;
+     width: 13%;
+      display: inline-block;
+}
+
+.icon{
+    height: 15%;
+    width: 100%;
+    background: #a887af; 
+    margin-top: 10px; 
+    background-size: 45%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-bottom: 4px solid #604566; 
+    position: relative;
+}
+
+.body{
+    background-image: url(../images/icons/1.png);
+}
+.eyes{
+    background-image: url(../images/icons/2.png);
+}
+
+.head{
+    background-image: url(../images/icons/3.png);
+}
+
+.mouth{
+    background-image: url(../images/icons/4.png);
+}
+
+.scale{
+    background-image: url(../images/icons/5.png);
+}
+
+.spots{
+    background-image: url(../images/icons/6.png);
+}
+
+.screen{
+    width: 1000px; 
+    height: 670px; 
+    border: 4px solid #604566; 
+    margin: 10px 10px 0 0px; 
+    display: inline-block; 
+    float: right; 
+    text-align: center; 
+    position: relative;
+}
+
+.screen p{
+    font-size: 100px; 
+    color: #604566; 
+    display: none;
+}
+
+.contBody{
+    height: 680px; 
+    width: 150px; 
+    background: #a887af; 
+    position: absolute; 
+    left: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    display: none;
+}
+
+.bodyColor{
+    width: 120px; 
+    height: 80px; 
+    transition: 1s; 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+.bodyColor:hover{
+    transform: scale(1.4);
+}
+
+.icon.body:hover .contBody{
+    display: flex;
+}
+
+.contEyes{
+    height: 680px; 
+    width: 150px; 
+    background: #a887af; 
+    position: absolute; 
+    left: 100%; 
+    top: -113.5%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    display: none;
+}
+
+.eyeColor{
+    width: 80px; 
+    height: 70px; 
+    transition: 1s; 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+.eyeColor4{
+    width: 100px; 
+    height: 60px;
+}
+
+.eyeColor:hover{
+    transform: scale(1.4);
+}
+
+.icon.eyes:hover .contEyes{
+    display: flex;
+}
+
+.contHead{
+    height: 680px; 
+    width: 150px; 
+    background: #a887af; 
+    position: absolute; 
+    left: 100%; 
+    top: -227.5%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    display: none;
+}
+
+.headColor{
+    width: 120px; 
+    height: 75px; 
+    transition: 1s; 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+.headColor:hover{
+    transform: scale(1.4);
+}
+
+.icon.head:hover .contHead{
+    display: flex;
+}
+
+.contMouth{
+    height: 680px; 
+    width: 150px; 
+    background: #a887af; 
+    position: absolute; 
+    left: 100%; 
+    top: -341.5%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    display: none;
+}
+
+.mouthColor{
+    width: 120px; 
+    height: 65px; 
+    transition: 1s; 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+.mouthColor:hover{
+    transform: scale(1.4);
+}
+
+.icon.mouth:hover .contMouth{
+    display: flex;
+}
+
+.contScale{
+    height: 680px; 
+    width: 150px; 
+    background: #a887af; 
+    position: absolute; 
+    left: 100%; 
+    top: -455%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    display: none;
+}
+
+.scaleColor{
+    width: 120px; 
+    height: 65px; 
+    transition: 1s; 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+.scaleColor:hover{
+    transform: scale(1.4);
+}
+
+.icon.scale:hover .contScale{
+    display: flex;
+}
+
+.contSpots{
+    height: 680px; 
+    width: 150px; 
+    background: #a887af; 
+    position: absolute; 
+    left: 100%; 
+    top: -569%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    display: none;
+}
+
+.spotsColor{
+    width: 120px; 
+    height: 65px; 
+    transition: 1s; 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+.spotsColor:hover{
+    transform: scale(1.4);
+}
+
+.icon.spots:hover .contSpots{
+    display: flex;
+}
+
+.body1{
+    background: url(../images/body_color/1.png) no-repeat;
+    width: 900px; 
+    height: 600px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 10%; 
+    position: absolute; 
+    display: none;
+}
+
+.body2{
+    background: url(../images/body_color/2.png) no-repeat; 
+    width: 900px; 
+    height: 600px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 10%; 
+    position: absolute; 
+    display: none;
+}
+
+.body3{
+    background: url(../images/body_color/3.png) no-repeat; 
+    width: 900px; 
+    height: 600px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 10%; 
+    position: absolute; 
+    display: none;
+}
+
+.body4{
+    background: url(../images/body_color/4.png) no-repeat; 
+    width: 900px; 
+    height: 600px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 10%; 
+    position: absolute; 
+    display: none;
+}
+
+.body5{background: url(../images/body_color/5.png) no-repeat; 
+    width: 900px; 
+    height: 600px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 10%; 
+    position: absolute; 
+    display: none;
+}
+
+.body6{background: url(../images/body_color/6.png) no-repeat; 
+    width: 900px; 
+    height: 600px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 10%; 
+    position: absolute; 
+    display: none;
+}
+
+.eye1{
+    background: url(../images/eyes/1.png) no-repeat; 
+    width: 37px;
+    height: 25px; 
+    background-size: contain; 
+    left: 7%; 
+    top: 11%;
+    position: absolute; 
+    display: none;
+}
+
+.eye2{
+    background: url(../images/eyes/2.png) no-repeat; 
+    width: 37px; 
+    height: 25px; 
+    background-size: contain; 
+    left: 7%; 
+    top: 11%; 
+    position: absolute; 
+    display: none;
+}
+
+.eye3{
+    background: url(../images/eyes/3.png) no-repeat; 
+    width: 37px; 
+    height: 25px; 
+    background-size: contain; 
+    left: 7%; 
+    top: 11%; 
+    position: absolute; 
+    display: none;
+}
+
+.eye4{
+    background: url(../images/eyes/4.png) no-repeat; 
+    width: 37px; 
+    height: 25px; 
+    background-size: contain; 
+    left: 8.5%; 
+    top: 11%; 
+    position: absolute; 
+    display: none;
+}
+
+.head1{
+    background: url(../images/head/1.png) no-repeat; 
+    width: 140px; 
+    height: 90px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 1%; 
+    position: absolute; 
+    transform: rotate(10deg); 
+    display: none;
+}
+
+.head2{
+    background: url(../images/head/2.png) no-repeat; 
+    width: 140px; 
+    height: 90px; 
+    background-size: contain; 
+    left: 3%; 
+    top: 1%; 
+    position: absolute; 
+    transform: rotate(10deg); 
+    display: none;
+}
+
+.head3{
+    background: url(../images/head/3.png) no-repeat; 
+    width: 150px; 
+    height: 80px; 
+    background-size: contain; 
+    left: 6%; 
+    top: -1%; 
+    position: absolute; 
+    transform: rotate(5deg); 
+    display: none;
+
+}
+
+.mouth1{
+    background: url(../images/mouth/1.png) no-repeat; 
+    width: 40px; 
+    height: 90px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 16%; 
+    position: absolute; 
+    display: none;
+}
+
+.mouth2{
+    background: url(../images/mouth/2.png) no-repeat; 
+    width: 40px; 
+    height: 90px; 
+    background-size: contain; 
+    left: 5%; 
+    top: 16%; 
+    position: absolute; 
+    display: none;
+}
+
+.mouth3{
+    background: url(../images/mouth/3.png) no-repeat; 
+    width: 30px; 
+    height: 57px; 
+    background-size: contain; 
+    left: 4.5%; 
+    top: 15%; 
+    position: absolute; 
+    display: none;
+}
+
+.scale1{
+    background: url(../images/scale/1.png) no-repeat; 
+    width: 810px; 
+    height: 900px; 
+    background-size: contain; 
+    left: 13%; 
+    top: 10%; 
+    position: absolute; 
+    display: none;
+}
+
+.scale2{
+    background: url(../images/scale/2.png) no-repeat; 
+    width: 800px; 
+    height: 900px; 
+    background-size: contain; 
+    left: 14.7%; 
+    top: 10%; 
+    position: absolute; 
+    display: none;
+}
+
+.scale3{
+    background: url(../images/scale/3.png) no-repeat; 
+    width: 780px; 
+    height: 900px; 
+    background-size: contain; 
+    left: 15%; 
+    top: 12%; 
+    position: absolute; 
+    display: none;
+}
+
+.spot1{
+    background: url(../images/spots/1.png) no-repeat; 
+    width: 800px; 
+    height: 900px; 
+    background-size: contain; 
+    left: 13.5%; 
+    top: 14%; 
+    position: absolute; 
+    display: none;
+}
+
+.spot2{
+    background: url(../images/spots/2.png) no-repeat; 
+    width: 760px; 
+    height: 900px; 
+    background-size: contain; 
+    left: 15.5%; 
+    top: 22%; 
+    position: absolute; 
+    display: none;
+}
+
+.spot3{
+    background: url(../images/spots/3.png) no-repeat; 
+    width:800px; 
+    height: 900px; 
+    background-size: contain; 
+    left: 15%; 
+    top: 19%; 
+    position: absolute; 
+    display: none;
+}
+
+.spot4{
+    background: url(../images/spots/4.png) no-repeat; 
+    width: 625px; 
+    height: 900px; 
+    background-size: contain; 
+    left: 23%; top: 35%; 
+    position: absolute; 
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
